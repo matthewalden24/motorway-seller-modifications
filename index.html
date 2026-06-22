@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mechanical Issues – Motorway</title>
+  <script>
+    if (sessionStorage.getItem('authed') !== '1') {
+      window.location.replace('password.html');
+    }
+  </script>
   <style>
     @font-face {
       font-family: 'New Transport';
