@@ -6,9 +6,12 @@
   <title>Mechanical Issues – Motorway</title>
   <script>
     if (sessionStorage.getItem('authed') !== '1') {
-      window.location.replace('password.html');
+      document.location.replace('password.html');
     }
   </script>
+  <style>
+    .phone-frame { visibility: hidden; }
+  </style>
   <style>
     @font-face {
       font-family: 'New Transport';
@@ -802,6 +805,7 @@
     }
     scalePhone();
     window.addEventListener('resize', scalePhone);
+    document.getElementById('phoneFrame').style.visibility = 'visible';
 
     // State
     let currentScreen = 'screen1';
